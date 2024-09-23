@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Dashboard | The Bit</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- SideBar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>Bit<span class="danger">Lab</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="./index.html" class="active">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="./users.html">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Users</h3>
+                </a>
+                <a href="./history.html">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>History</h3>
+                </a>
+                <a href="./analytics.html">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="./ticket.html">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Tickets</h3>
+                    <span class="message-count">1</span>
+                </a>
+                <a href="./data.html">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Data</h3>
+                </a>
+                <a href="./settings.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="./login.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of SideBar Here-->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Analytics</h1>
+            <!-- Analytics -->
+            <div class="analyse">
+                <div class="bitmod-servers">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total BitMod Servers</h3>
+                            <h1>245,109</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="bitmusic-servers">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total BitMusic Servers</h3>
+                            <h1>134,654</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="bitgames-servers">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total BitGames Servers</h3>
+                            <h1>154,109</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Site Visits</h3>
+                            <h1>1,254,109</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Users</h3>
+                            <h1>554,109</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="income">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Income Made</h3>
+                            <h1>$154,109.58</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- New Users -->
+            <div class="new-users">
+                <h2> New Users </h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="images/profile-2.jpg">
+                        <h2>Ethan</h2>
+                        <p>Active Now</p>
+                    </div>
+                    <div class="user">
+                        <img src="images/profile-1.jpg">
+                        <h2>User2</h2>
+                        <p>5 Hours Ago</p>
+                    </div>
+                    <div class="user">
+                        <img src="images/profile-3.jpg">
+                        <h2>User3</h2>
+                        <p>4 Min Ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of New users -->
+
+            <!-- Recent Payments Table -->
+            <div class="recent-payments">
+                <h2>Recent Payments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="./history.html">Show All</a>
+            </div>
+            <!-- End of Recent Payments -->
+        </main>
+
+        <!-- End of Main Content -->
+
+        <!-- Right Selection -->
+        <div class="right-selection">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>User</b></p>
+                        <small class="text-muted">Role</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- End of Nav-->
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <div class="add-reminder" id="add-reminder-btn">
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                    </div>
+                    <div class="notifications" id="notifications-btn">
+                        <span class="material-icons-sharp">
+                            notifications_none
+                        </span>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div>
+    <!-- Popup Modal Structure -->
+    <div id="reminderModal" class="modal">
+        <div class="modal-content">
+            <span class="reminder-close-btn">&times;</span>
+            <h2>Add Reminder</h2>
+            <form id="reminderForm">
+                <label for="reminderTitle">Title:</label>
+                <input type="text" id="reminderTitle" name="reminderTitle" required>
+
+                <label for="reminderDate">Date:</label>
+                <input type="date" id="reminderDate" name="reminderDate" required>
+
+                <label for="reminderTime">Time:</label>
+                <input type="time" id="reminderTime" name="reminderTime" required>
+
+                <button type="submit">Add Reminder</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="reminderSettingsModal" class="modal">
+        <div class="modal-content">
+            <span class="reminder-settings-close-btn">&times;</span>
+            <h2>Edit Reminder</h2>
+        </div>
+    </div>
+
+    <script src="/js/theme.js"></script>
+    <script src="/js/payments.js"></script>
+    <script type="module" src="/js/index.js"></script>
+</body>
+
+</html>
