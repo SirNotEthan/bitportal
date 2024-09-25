@@ -5,7 +5,7 @@ const addReminder = document.getElementById('add-reminder-btn');
 const reminderModal = document.getElementById('reminderModal');
 const reminderSettingsModal = document.getElementById('reminderSettingsModal');
 const reminderCloseModal = document.querySelector('.reminder-close-btn');
-const reminderSettingCloseModal = document.querySelector('.reminder-settings-close-btn')
+const reminderSettingCloseModal = document.querySelector('.reminder-settings-close-btn');
 let reminders = JSON.parse(localStorage.getItem('reminders')) || [];
 
 function displayReminders() {
@@ -42,16 +42,11 @@ function displayReminders() {
             reminderSettings.addEventListener('click', () => {
                 reminderSettingsModal.style.display = 'block';
             });
-
-            reminderSettingCloseModal.addEventListener('click', () => {
-                reminderModal.style.display = 'none';
-            });
         } else {
             console.error("Reminder data is incomplete:", reminder);
         }
     });
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
@@ -69,8 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const ReminderPermissions = ['Owner', 'Admin'];
 
     if (!ReminderPermissions.includes(user.role)) {
-        addReminder.style.display = 'none'
-        reminderSettings.style.display = 'none'
+        addReminder.style.display = 'none';
+        // reminderSettings.style.display = 'none';  // You need to handle this within each reminder
     }
 
     if (typeof Payments !== 'undefined') {
@@ -111,7 +106,7 @@ document.getElementById('reminderForm').addEventListener('submit', (event) => {
         title: title,
         date: date,
         time: time,
-        createdBy: user.name  // Use logged-in user's name
+        createdBy: user.name  
     };
 
     reminders.push(reminder);
@@ -128,6 +123,10 @@ addReminder.addEventListener('click', () => {
 
 reminderCloseModal.addEventListener('click', () => {
     reminderModal.style.display = 'none';
+});
+
+reminderSettingCloseModal.addEventListener('click', () => {
+    reminderSettingsModal.style.display = 'none';
 });
 
 window.addEventListener('click', (event) => {
